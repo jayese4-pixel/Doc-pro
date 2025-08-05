@@ -1,0 +1,226 @@
+<!-- <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocPro - Plataforma Médica Digital</title>
+
+    <!-- Fuente Google -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+
+    <!-- Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#inicio">
+                <img src="./imagen/logo-docpro.png" alt="DocPro Logo" style="width: 130px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#estadisticas">Estadísticas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#acceso">Acceder</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================= HERO PRINCIPAL ================= -->
+    <section id="inicio" class="hero-main fade-in">
+        <div class="container text-center hero-content">
+            <h1 class="hero-title">Bienvenido a <span>DocPro</span></h1>
+            <p class="hero-subtitle">Plataforma médica digital que conecta pacientes y profesionales de la salud.</p>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <a href="#acceso" class="btn btn-primary btn-lg"><i class="fas fa-sign-in-alt me-2"></i>Comenzar Ahora</a>
+                <a href="#servicios" class="btn btn-outline-primary btn-lg"><i class="fas fa-info-circle me-2"></i>Conocer Más</a>
+            </div>
+            <!-- Imagen de bienvenida -->
+            <div class="hero-image-container mt-4">
+                <img src="./imagen/llamada.jpg" alt="Consulta médica en línea" class="hero-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= SERVICIOS ================= -->
+    <section id="servicios" class="features-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-primary mb-3">Nuestros Servicios</h2>
+                <p class="lead text-muted">Conectamos a pacientes y médicos para una atención más rápida y confiable.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-video"></i></div>
+                        <h3 class="feature-title">Consultas Virtuales</h3>
+                        <p>Consulta con médicos especialistas desde casa de manera rápida y segura.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-calendar-check"></i></div>
+                        <h3 class="feature-title">Gestión de Citas</h3>
+                        <p>Agenda y administra tus citas médicas las 24 horas, desde cualquier lugar.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-file-medical"></i></div>
+                        <h3 class="feature-title">Historial Digital</h3>
+                        <p>Accede a tu historial médico en línea con total seguridad y privacidad.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= ESTADÍSTICAS ================= -->
+    <section id="estadisticas" class="stats-section text-center py-5">
+        <div class="container d-flex justify-content-center gap-5 flex-wrap">
+            <div><span class="stat-number">500+</span><br>Médicos disponibles</div>
+            <div><span class="stat-number">10,000+</span><br>Consultas realizadas</div>
+            <div><span class="stat-number">24/7</span><br>Atención en línea</div>
+        </div>
+    </section>
+
+    <!-- ================= ACCEDER ================= -->
+    <section id="acceso" class="login-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-primary mb-3">Accede a tu cuenta</h2>
+                <p class="lead text-muted">Selecciona tu tipo de usuario para continuar</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="login-card card">
+                        <div class="card-header">
+                            <ul class="nav nav-tabs card-header-tabs" id="loginTabs" role="tablist">
+                                <li class="nav-item">
+                                    <button class="nav-link active text-white" data-bs-toggle="tab" data-bs-target="#paciente">
+                                        <i class="fas fa-user me-2"></i>Paciente
+                                    </button>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="nav-link text-white" data-bs-toggle="tab" data-bs-target="#medico">
+                                        <i class="fas fa-user-md me-2"></i>Médico
+                                    </button>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="nav-link text-white" data-bs-toggle="tab" data-bs-target="#admin">
+                                        <i class="fas fa-cog me-2"></i>Administrador
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-body">
+                            <div class="tab-content">
+                                <!-- PACIENTE -->
+                                <div class="tab-pane fade show active" id="paciente">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label class="form-label">Documento de Identidad</label>
+                                            <input type="text" class="form-control" placeholder="Ingresa tu cédula">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Contraseña</label>
+                                            <input type="password" class="form-control" placeholder="Ingresa tu contraseña">
+                                        </div>
+                                        <button type="submit" class="btn btn-primary w-100 mb-3">
+                                            <i class="fas fa-sign-in-alt me-2"></i>Iniciar Sesión
+                                        </button>
+                                        <div class="text-center">
+                                            <span>¿No tienes cuenta?</span>
+                                            <a href="pages/registro.html" class="btn btn-link p-0">Regístrate aquí</a>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- MÉDICO -->
+                                <div class="tab-pane fade" id="medico">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label class="form-label">ID Profesional Médico</label>
+                                            <input type="text" class="form-control" placeholder="Ingresa tu ID de médico">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Contraseña</label>
+                                            <input type="password" class="form-control" placeholder="Ingresa tu contraseña">
+                                        </div>
+                                        <button type="submit" class="btn btn-primary w-100 mb-3">
+                                            <i class="fas fa-sign-in-alt me-2"></i>Iniciar Sesión
+                                        </button>
+                                        <div class="text-center">
+                                            <span>¿No tienes cuenta?</span>
+                                            <a href="pages/registro.html" class="btn btn-link p-0">Regístrate aquí</a>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- ADMINISTRADOR -->
+                                <div class="tab-pane fade" id="admin">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label class="form-label">Usuario Administrador</label>
+                                            <input type="text" class="form-control" placeholder="Ingresa tu usuario">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Contraseña</label>
+                                            <input type="password" class="form-control" placeholder="Ingresa tu contraseña">
+                                        </div>
+                                        <button type="submit" class="btn btn-primary w-100 mb-3">
+                                            <i class="fas fa-sign-in-alt me-2"></i>Iniciar Sesión
+                                        </button>
+                                        <div class="text-center">
+                                            <span>¿Problemas para acceder?</span>
+                                            <a href="#" class="btn btn-link p-0">Contacta al soporte</a>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div> <!-- card-body -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+    <div class="container d-flex justify-content-between align-items-center flex-wrap">
+        <div class="footer-info">
+            <h5><i class="fas fa-stethoscope me-2"></i>DocPro</h5>
+            <p class="text-muted">Tu salud en tus manos</p>
+        </div>
+
+        <div class="footer-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+    <div class="text-center mt-3">
+        <p class="text-muted mb-0">&copy; 2025 DocPro. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+
+    <!-- Botón flotante WhatsApp -->
+    <a href="https://wa.me/123456789" class="whatsapp-float" target="_blank" aria-label="Chat en WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
